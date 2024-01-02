@@ -1,0 +1,44 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+/* 
+div{
+    margin-top: 300px;
+    margin-bottom: 3000px;
+    width: 400px;
+    height: 400px;
+    background-color: red;
+     padding --> padding-top, padding-bottom, padding-left, padding-right 
+     padding-top: 200px;
+    padding-bottom: 300px; 
+    padding-top: 30px;
+} */
+
+.red-div{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+}
+
+.yellow-div{
+    width: 100px;
+    height: 100px;
+    background-color: yellow;
+}
+
+#unique-div{
+    width: 100px;
+    height: 100px;
+    background-color: purple;
+}
