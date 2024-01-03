@@ -1,0 +1,109 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+.main-ctn{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-ctn{
+    width: 100%;
+    height: 70%;
+    background-color: #F0F2F5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.card{
+    width: 350px;
+    height: 280px;
+    background-color: #FFFFFF;
+    border-radius: 20px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.top, .bottom{
+    width: 100%;
+    height: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.top p{
+    font-family: sans-serif;
+    margin-top: 30px;
+}
+.bottom{
+    flex-direction: row;
+    gap: 10px;
+}
+.bottom a{
+    font-family: sans-serif;
+    margin-bottom: 30px;
+    text-decoration: none;
+}
+.middle{
+    width: 100%;
+    height: 70%;
+}
+
+.login-form{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.ipf{
+    width: 80%;
+    height: 41px;
+    border-radius: 8px;
+    padding: 10px;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+
+.ipf:focus{
+    outline: none;
+}
+
+.login-btn{
+    width: 80%;
+    height: 41px;
+    border: none;
+    background-color: #166fe5;
+    color: white;
+    font-size: 20px;
+    border-radius: 8px;
+}
+
+
+.link-ctn{
+    width: 100%;
+    height: 30%;
+    background-color: #FFFFFF;
+}
+.logo-text{
+    font-size: 2.6em;
+    font-family: sans-serif;
+    color: #0864fb;
+}
