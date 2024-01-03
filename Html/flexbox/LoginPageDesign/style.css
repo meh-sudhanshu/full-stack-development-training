@@ -52,6 +52,7 @@
 .bottom{
     flex-direction: row;
     gap: 10px;
+   
 }
 .bottom a{
     font-family: sans-serif;
@@ -74,7 +75,7 @@
 }
 
 .ipf{
-    width: 80%;
+    width: 88%;
     height: 41px;
     border-radius: 8px;
     padding: 10px;
@@ -87,7 +88,7 @@
 }
 
 .login-btn{
-    width: 80%;
+    width: 88%;
     height: 41px;
     border: none;
     background-color: #166fe5;
@@ -106,4 +107,22 @@
     font-size: 2.6em;
     font-family: sans-serif;
     color: #0864fb;
+}
+
+
+.list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    gap: 10px;
+}
+
+.link-ctn{
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-end;
+    align-items: flex-start;
+    padding-left: 200px;
+    padding-bottom: 40px;
 }
