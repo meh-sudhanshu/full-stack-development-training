@@ -1,0 +1,127 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+
+.main{
+    width: 100vw;
+    height: 100vh;
+    background-color:#CCCCCC;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    width:500px;
+    height:500px;
+    background-color:#FFFFFF;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.ctn{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.option-ctn{
+    height: 10%;
+    flex-direction: row;
+}
+
+.option-ctn button{
+    width: 50%;
+    height: 100%;
+    border: none;
+    font-size: 1.4rem;
+}
+
+
+.btn{
+    background-color: #FFFFFF;
+}
+
+.text-ctn{
+    height: 10%;
+}
+
+.text-ctn p{
+    color: #CCCCCC;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.text-ctn p span{
+    font-weight: 800;
+    cursor: pointer;
+}
+
+.form-ctn{
+    height: 60%;
+}
+.btn-ctn{
+    height: 20%;
+}
+.top, .bottom{
+    width: 100%;
+    height: 50%;
+}
+.google-btn{
+    background-color: #DD4C3B;
+    opacity: 0.9;
+    cursor: pointer;
+}
+.fb-btn{
+    background-color: #2A3969;
+    opacity: 0.9;
+    cursor: pointer;
+}
+.sign-in-btn-ctn{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.sign-in-btn-ctn div{
+    height: 100%;
+    width: 20%;
+}
+.sign-in-btn-ctn button{
+    height: 100%;
+    width: 80%;
+    border: none;
+    color: white;
+}
+.fb-logo-ctn{
+    background-color: #DD4C3B;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.google-logo-ctn{
+    background-color: #283D68;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.google-logo-ctn h2 , .fb-logo-ctn h2{
+    color: white;
+    font-size: 14px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+
+
