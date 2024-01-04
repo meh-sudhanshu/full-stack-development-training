@@ -1,0 +1,40 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.main{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.number{
+    font-size: 4.2rem;
+    color: #1e1e1e;
+    font-weight: 400;
+}
+
+.btn{
+    width: 140px;
+    height: 28px;
+    cursor: pointer;
+    margin: 10px;
+    border: none;
+}
+
+.dec-btn{
+    background-color: #FF004D;
+    color: white;
+}
+
+.inc-btn{
+    background-color: #65B741;
+    color: white;
+}
