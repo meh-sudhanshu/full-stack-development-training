@@ -18,6 +18,40 @@
         .f-top{
             width: 100%;
             height: 30%;
+            background-color: red;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            gap: 10px;
+        }
+        .f-middle{
+            width: 100%;
+            height: 30%;
+            background-color: yellow;
+        }
+        .f-bottom{
+            width: 100%;
+            height: 40%;
+            background-color: gray;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+        }
+        .left{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            gap: 10px;
+        }
+        .f-middle{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
         }
     </style>
 
@@ -40,9 +74,23 @@
             </div>
             <div class="form-ctn ctn">
                 <form action="" class="login-form">
-                    <div class="f-top"></div>
-                    <div class="f-middle"></div>
-                    <div class="f-bottom"></div>
+                    <div class="f-top">
+                        <label for="username">Email*</label>
+                        <input type="text" name="username" placeholder="Email">
+                    </div>
+                    <div class="f-middle">
+                        <div class="left">
+                            <label for="password">Password*</label>
+                            <input type="password" name="password" placeholder="password">
+                        </div>
+                        <div class="right">
+                            <h2>Show</h2>
+                        </div>
+                    </div>
+                    <div class="f-bottom">
+                        <a href="#">Forgetten password ?</a>
+                        <button  type="submit" class="login-btn">Login</button>
+                    </div>
                 </form>
 
 
