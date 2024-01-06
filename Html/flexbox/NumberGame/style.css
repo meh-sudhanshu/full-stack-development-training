@@ -39,3 +39,32 @@
     color: white;
 }
 
+
+.overlay{
+    width: 50vw;
+    height: 50vh;
+    background-color: #22092C;
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    opacity: 0.8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+}
+
+.message{
+    color: #FFF;
+}
+
+.close_btn{
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+}
+
+.hidden{
+    display: none;
+}
