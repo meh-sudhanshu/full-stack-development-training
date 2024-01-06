@@ -17,13 +17,14 @@ console.log(buttons[1])
 
 
 const overlay = document.getElementsByClassName("overlay")[0]
+const messageHeading = document.getElementsByClassName("message")[0]
 
 const closeButton = document.getElementById("close_btn")
-
 
 function increaseHandler(){
     number = Number(number)
     if(number+1 > 10){
+        messageHeading.innerHTML = "Number can not go above 10"
         overlay.classList.remove("hidden")
         return
     }
@@ -34,6 +35,7 @@ function increaseHandler(){
 function decreaseHandler(){
     number = Number(number)
     if(number-1 < -10){
+        messageHeading.innerHTML = "Number can not go below -10"
         overlay.classList.remove("hidden")
         return
     }
