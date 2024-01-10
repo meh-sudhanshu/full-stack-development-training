@@ -34,8 +34,6 @@ function submitHandler(event){
     const footerDiv = document.createElement("div")
     footerDiv.classList.add("footer")
 
-
-
     const startDateH2 = document.createElement("h2")
     startDateH2.classList.add("date")
     startDateH2.innerHTML = event.target.form[2].value
