@@ -4,6 +4,7 @@ const addButton = document.getElementsByClassName("add_btn")[0]
 const addItemForm = document.getElementsByClassName("add_item_form")[0]
 const submitButton = document.getElementsByClassName("submit_btn")[0]
 const itemContainer = document.getElementsByClassName("item_ctn")[0]
+const discardButton = document.getElementsByClassName("discard_btn")[0]
 
 const allInputFields = document.getElementsByClassName("ipf")
 const titleField = allInputFields[0]
@@ -15,6 +16,7 @@ console.log(titleField,descriptionField,startDateField,endDateField)
 
 
 function submitHandler(event){
+    addItemForm.classList.add("hidden")
     event.preventDefault()
     console.log(event)
 
@@ -39,8 +41,8 @@ function submitHandler(event){
     startDateH2.innerHTML = event.target.form[2].value
 
     const endDateH2 = document.createElement("h2")
-    startDateH2.classList.add("date")
-    startDateH2.innerHTML = event.target.form[3].value
+    endDateH2.classList.add("end_date")
+    endDateH2.innerHTML = event.target.form[3].value
 
     const removeBtn = document.createElement("button")
     removeBtn.classList.add("remove_btn")
@@ -58,17 +60,28 @@ function submitHandler(event){
 
     itemContainer.appendChild(itemDiv)
 
+    event.target.form[0].value = ""
+    event.target.form[1].value = ""
+    event.target.form[2].value = ""
+    event.target.form[3].value = ""
+
 
 
     console.log(event.target.form[0].value)
     console.log(event.target.form[1].value)
     console.log(event.target.form[2].value)
     console.log(event.target.form[3].value)
+
 }
 
 
 function addButtonHandler(event){
     addItemForm.classList.remove("hidden")
+}
+
+function discardHandler(event){
+    event.preventDefault()
+    addItemForm.classList.add("hidden")
 }
 
 function titleChangeHandler(event){
@@ -79,3 +92,4 @@ function titleChangeHandler(event){
 addButton.addEventListener("click",addButtonHandler)
 submitButton.addEventListener("click",submitHandler)
 titleField.addEventListener("change",titleChangeHandler)
+discardButton.addEventListener("click",discardHandler)
