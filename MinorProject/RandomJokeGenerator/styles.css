@@ -1,0 +1,29 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: monospace;
+}
+
+.main{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.joke{
+    font-size: 1.8rem;
+}
+
+.joke-generator{
+    width: 180px;
+    height: 28px;
+    border: none;
+    background-color: #86A7FC;
+    color: #FFF;
+    cursor: pointer;
+}
