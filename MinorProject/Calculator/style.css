@@ -1,0 +1,43 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.main{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cal{
+    width:20vw;
+    height:75vh;
+    border-radius: 28px;
+    border: 8px solid #000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.top{
+    width: 100%;
+    height:5%;
+    border-top-right-radius: 28px;
+    border-top-left-radius: 28px;
+}
+
+.middle{
+    width: 100%;
+    height: 40%;
+    background-color: yellow;
+}
+.bottom{
+    width: 100%;
+    height: 55%;
+    border-bottom-left-radius: 28px;
+    border-bottom-right-radius: 28px;
+}
