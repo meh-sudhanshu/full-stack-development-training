@@ -2,6 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: monospace;
 }
 
 .main{
@@ -28,8 +29,22 @@
     height:5%;
     border-top-right-radius: 28px;
     border-top-left-radius: 28px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
+.time{
+    font-size: 1rem;
+}
+
+.icon{
+    width: 15px;
+    height:15px;
+}
 .middle{
     width: 100%;
     height: 40%;
