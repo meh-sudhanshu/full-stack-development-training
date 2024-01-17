@@ -19,10 +19,8 @@ function submitHandler(event){
     addItemForm.classList.add("hidden")
     event.preventDefault()
     console.log(event)
-
     const itemDiv = document.createElement("div")
     itemDiv.classList.add("item")
-
     const titleHeading = document.createElement("h2")
     titleHeading.classList.add("title")
     titleHeading.innerHTML = event.target.form[0].value
@@ -91,3 +89,7 @@ addButton.addEventListener("click",addButtonHandler)
 submitButton.addEventListener("click",submitHandler)
 titleField.addEventListener("change",titleChangeHandler)
 discardButton.addEventListener("click",discardHandler)
+
+
+
+

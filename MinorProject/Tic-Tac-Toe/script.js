@@ -4,11 +4,7 @@
 
 
 
-
-
-
 const grid = document.getElementsByClassName("grid")[0]
-
 var occupiedClasses = [-1,-1,-1,-1,-1,-1,-1,-1,-1,-1]
 
 const min = 1
@@ -34,7 +30,7 @@ const generateAvailableRandomIndex = (count)=>{
 
 
 const checkIfThereISaWinner = ()=>{
-    
+
 }
 
 
