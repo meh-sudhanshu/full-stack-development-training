@@ -1,0 +1,20 @@
+
+
+.Increase{
+    width: 200px;
+    height: 40px;
+    background-color: #294B29;
+    color: #FFF;
+    cursor: pointer;
+    border: none;
+    margin: 20px;
+}
+
+.Decrease{
+    width: 200px;
+    height: 40px;
+    background-color: #A94438;
+    color: #FFF;
+    cursor: pointer;
+    border: none;
+}
