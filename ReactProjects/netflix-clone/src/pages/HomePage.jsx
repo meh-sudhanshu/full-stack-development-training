@@ -9,7 +9,6 @@ const HomePage = ()=>{
     let navigate = useNavigate()
 
     const clickHandler = ()=>{
-        
         navigate("/user-page")
     }
 
