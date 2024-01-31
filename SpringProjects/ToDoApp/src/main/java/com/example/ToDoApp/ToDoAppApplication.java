@@ -1,12 +1,13 @@
-package com.netflix.clone.Netflixcloneserver;
+package com.example.ToDoApp;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class NetflixCloneServerApplication {
+public class ToDoAppApplication {
+
 	public static void main(String[] args) {
-		SpringApplication.run(NetflixCloneServerApplication.class, args);
+		SpringApplication.run(ToDoAppApplication.class, args);
 	}
 
 }
