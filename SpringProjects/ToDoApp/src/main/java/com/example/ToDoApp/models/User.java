@@ -27,12 +27,17 @@ public class User {
     @Email
     private String email;
 
+
+    @NotBlank
+    @NotNull
     private String dob;
 
     @NotBlank
     @NotNull
     @Size(min = 3, max = 30, message = "name should be in between 3 to 30 in length")
     private String name;
+
+    private String role = "USER";
 
     public Long getId() {
         return id;
@@ -80,5 +85,17 @@ public class User {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    public void setId(long id) {
+        this.id = id;
+    }
+
+    public String getRole() {
+        return role;
+    }
+
+    public void setRole(String role) {
+        this.role = role;
     }
 }
