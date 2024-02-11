@@ -1,0 +1,10 @@
+----> open for public user
+----> add friends
+----> block people
+----> post
+----> comments on post
+----> reply to comments on post
+----> accept or reject friend rquest
+----> send different types of files in message
+----> play video and audio
+----> 

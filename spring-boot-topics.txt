@@ -1,0 +1,46 @@
+
+
+*how to initialize a springboot project,
+
+*maven
+
+* folder structure of springboot project
+
+* @SpringbootApplication   ---> @Configuration, @EnableAutoConfiguration, @ComponetScan
+
+* Models --> @Entity, @Id, @GeneratedValue, @NotNull .....................................
+
+* Repositories: extends CRUDRepository<>
+
+* @controller, @RestController  @RequestMapping
+
+* @PostMapping , @GetMapping
+
+* serive layer ---> @Service
+
+---> Remaining topic ---> spring security --> password hashing, username-password based 									authentication,
+
+						authorization
+			Exception handling, session and cookies
+
+			
+
+
+
+Important Terminology :: dependency injection, inversion of control, beans, object factory.
+
+functionality :: verify email, generate pdf, google login, forget password, verify phone
+
+
+
+---------------------------------------------------------------------------------------------------
+
+
+javascript ---> async await, promises, callback hell, callback functions, closures, fetch,
+		event loop, arrow functions.
+
+React ---> 	react-portal, useEffect, context Api, props, redux, pure component, 				customHookCreation
+		
+			
+
+

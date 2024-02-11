@@ -19,7 +19,6 @@ public class SecurityConfig {
                             requestMatchers(HttpMethod.POST,"/admin/**").hasRole("ADMIN").
                             requestMatchers(HttpMethod.POST,"/user/**").hasRole("USER")
                 );
-
         http.httpBasic(Customizer.withDefaults());
         http.csrf(AbstractHttpConfigurer :: disable);
 
