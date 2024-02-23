@@ -36,7 +36,6 @@ Object.entries(obj).forEach(([key,value])=>{
     console.log(key,value)
 })
 
-
 // deep copy, shallow copy
 
 
