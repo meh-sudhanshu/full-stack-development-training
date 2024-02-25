@@ -36,7 +36,6 @@ public class Book {
 
     private String publishedDate; // published_date
 
-
-
+    private int availableQuantity;
 
 }

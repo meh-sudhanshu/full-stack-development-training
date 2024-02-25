@@ -2,6 +2,7 @@ package com.code.lantern.librarymanagementsystem.controllers;
 
 
 import com.code.lantern.librarymanagementsystem.exceptions.DuplicateTitleException;
+import com.code.lantern.librarymanagementsystem.exceptions.TitleNotFound;
 import com.code.lantern.librarymanagementsystem.models.Book;
 import com.code.lantern.librarymanagementsystem.repositories.BookRepository;
 import com.code.lantern.librarymanagementsystem.services.BookService;
@@ -66,7 +67,23 @@ public class BookController {
 
 
     @GetMapping("/find-by-title/{title}")
-    public  Book findByTitle(@PathVariable String title){
+    public  Optional<Book> findByTitle(@PathVariable String title){
         return bookService.findByTitle(title);
+    }
+
+    @PostMapping("/acquire-book/{title}")
+    public ResponseEntity<?> acquireBook(@PathVariable String title) throws TitleNotFound{
+        Optional<Book> book = bookRepository.findByTitle(title);
+        if (book.isPresent()){
+            var myBook = book.get();
+            int availableQuantity = myBook.getAvailableQuantity();
+            if (availableQuantity > 0){
+                myBook.setAvailableQuantity(availableQuantity-1);
+                return new ResponseEntity<>(myBook,HttpStatusCode.valueOf(200));
+            }
+            return new ResponseEntity<>("Request Book is not available at this moment",HttpStatusCode.valueOf(200));
+        }else {
+            throw new TitleNotFound("book title does not exist");
+        }
     }
 }

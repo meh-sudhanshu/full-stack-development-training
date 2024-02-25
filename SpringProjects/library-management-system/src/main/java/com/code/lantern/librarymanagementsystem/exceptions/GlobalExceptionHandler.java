@@ -17,5 +17,13 @@ public class GlobalExceptionHandler {
 //        response.setCause(cause);
         return  new ResponseEntity<>("Duplicate title has been encountered", HttpStatusCode.valueOf(200));
     }
+    @ExceptionHandler(TitleNotFound.class)
+    public ResponseEntity<?> bookTitleNotFound(Exception ex){
+        return new ResponseEntity<>("Book With Provided tile does not exist",HttpStatusCode.valueOf(200));
+    }
+    @ExceptionHandler
+    public ResponseEntity<?> someThingWentWrong(Exception ex){
+        return new ResponseEntity<>("Something went wrong",HttpStatusCode.valueOf(200));
+    }
 
 }
